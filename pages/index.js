@@ -6,7 +6,7 @@ export default function Home() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/photos")
+    fetch("/api/photos")
       .then((res) => res.json())
       .then((data) => setPhotos(data));
   }, []);
