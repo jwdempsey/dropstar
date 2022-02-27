@@ -7,9 +7,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "icloud-shared-album": "^0.0.10",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-slideshow-image": "^3.7.0"
   },
   "devDependencies": {
     "eslint": "8.9.0",

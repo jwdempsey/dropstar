@@ -1,0 +1,59 @@
+@import "react-slideshow-image/dist/styles.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(51, 72, 101);
+  margin-bottom: 1rem;
+  height: 3rem;
+  padding: 10px 0 0 6px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 65vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+
+.container h2 {
+  color: rgb(51, 72, 101);
+  padding-left: 10px;
+}
