@@ -11,6 +11,30 @@ export default function Home() {
       .then((data) => setPhotos(data));
   }, []);
 
+  const properties = {
+    duration: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    indicators: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="container">
       <Head>
@@ -23,7 +47,7 @@ export default function Home() {
 
       <div className="container">
         <h2>&#128016; The Legend</h2>
-        <Slide easing="ease" slidesToShow={3}>
+        <Slide {...properties}>
           {photos &&
             photos.map((img, index) => (
               <div className="slide" key={index}>
